@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './App.css';
 import Todo from './todo/Todo';
 import Sidebar from './sidebar/Sidebar';
@@ -9,6 +9,7 @@ function App() {
   const [open, setOpen] = useState(false);
   const onChangeText = (e) => setText(e.target.value);
   const onClickOpen = () => setOpen(!open);
+  const onClickClose = useCallback(() => setOpen(false), [])
 
   return (
     <div className="App">
@@ -18,7 +19,7 @@ function App() {
       <br />
       <br />
       <button onClick={onClickOpen} open>表示</button>
-      <Rendering open={open} />
+      <Rendering open={open} onClick={onClickClose} />
     </div>
   );
 }
