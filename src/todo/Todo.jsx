@@ -52,7 +52,9 @@ function Todo() {
 
   return (
     <div className="Todo">
-      <InputTodo inputTodo={inputTodo} onChange={onChangeInputTodo} onClick={onClickAddTodo} />
+      <InputTodo inputTodo={inputTodo} onChange={onChangeInputTodo} onClick={onClickAddTodo} disabled={incompleteTodos.length >= 5} />
+      { incompleteTodos.length >= 5 && (
+        <p style={{ color: 'red' }}>登録できるTODOは5個までです。完了または削除してください。</p> ) }
       <IncompleteTodo incompleteTodos={incompleteTodos} onClickComplete={onClickCompleteTodo} onClickDelete={onClickDeleteTodo}/>
       <CompleteTodo completeTodos={completeTodos} onClickRestore={onClickRestoreTodo} />
     </div>
