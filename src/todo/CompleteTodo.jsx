@@ -2,10 +2,26 @@ import React from 'react'
 
 export function CompleteTodo(props) {
   const { completeTodos, onClickRestore } = props;
+  const style = {
+    areaStyle: {
+      backgroundColor: '#ffffe0',
+      width: '400px',
+      minHeight: '200px',
+      padding: '8px',
+      margin: '8px',
+      borderRadius: '8px',
+    },
+    titleStyle: {
+      textAlign: 'center',
+      marginTop: 0,
+      fontWeight: 'bold',
+      color: '#666',
+    }
+  }
 
   return (
-    <div className='complete-area'>
-        <p className='title'>完了のTODO</p>
+    <div style={style.areaStyle}>
+        <p style={style.titleStyle}>完了のTODO</p>
         <ul>
           {completeTodos.map((completeTodo, index) => {
             return(
