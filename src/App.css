@@ -2,18 +2,18 @@ body {
   font-family: sans-serif;
 }
 
-input {
+/* input {
   border-radius: 16px;
   border: none;
   padding: 6px 16px;
   outline: none;
-}
+} */
 
-button {
+/* button {
   border-radius: 16px;
   border: none;
   padding: 4px 16px;
-}
+} */
 
 button:hover {
   background-color: #ff7fff;
