@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Todo from './Todo';
+import Todo from './todo/Todo';
 import Sidebar from './sidebar/Sidebar';
 
 function App() {
