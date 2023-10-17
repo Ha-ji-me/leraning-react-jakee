@@ -19,7 +19,7 @@ function Router() {
       </div>
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/page1"></Route>
+        <Route path="/page1">
           <Route index={true} element={<Page1 />} />
           <Route path="detail-a" element={<Page1DetailA />} />
           <Route path="detail-b" element={<Page1DetailB />} />
