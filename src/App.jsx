@@ -4,6 +4,8 @@ import Todo from './todo/Todo';
 import Sidebar from './sidebar/Sidebar';
 import MainRendering from './render/MainRendering';
 import Router from './router/Router';
+import { PrimaryButton } from './components/atoms/button/PrimaryButton';
+import { SecondaryButton } from './components/atoms/button/SecondaryButton';
 
 function App() {
 
@@ -12,7 +14,9 @@ function App() {
       {/* <Todo /> */}
       {/* <Sidebar /> */}
       {/* <MainRendering /> */}
-      <Router />
+      {/* <Router /> */}
+      <PrimaryButton>test</PrimaryButton>
+      <SecondaryButton>test</SecondaryButton>
     </div>
   );
 }
