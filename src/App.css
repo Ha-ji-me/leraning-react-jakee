@@ -29,4 +29,6 @@
 /* UserCard */
 body {
   background-color: #e4f9f5;
+  margin: 0;
+  min-height: 100vh;
 }

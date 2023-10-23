@@ -1,13 +1,16 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { BrowserRouter, Link } from 'react-router-dom';
 import './App.css';
-import Todo from './todo/Todo';
-import Sidebar from './sidebar/Sidebar';
-import MainRendering from './render/MainRendering';
-import Router from './router/Router';
+// import Todo from './todo/Todo';
+// import Sidebar from './sidebar/Sidebar';
+// import MainRendering from './render/MainRendering';
+// import Router from './router/Router';
 import { PrimaryButton } from './components/atoms/button/PrimaryButton';
 import { SecondaryButton } from './components/atoms/button/SecondaryButton';
 import { SearchInput } from './components/molculus/SearchInput';
 import { UserCard } from './components/organisms/user/UserCard';
+import { HeaderOnly } from './components/templates/HeaderOnly';
+import { DefaultLayout } from './components/templates/DefaultLayout';
 
 function App() {
   const user = {
@@ -20,16 +23,18 @@ function App() {
   }
 
   return (
-    <div className="App">
-      {/* <Todo /> */}
-      {/* <Sidebar /> */}
-      {/* <MainRendering /> */}
-      {/* <Router /> */}
-      <PrimaryButton>test</PrimaryButton>
-      <SecondaryButton>test</SecondaryButton>
-      <SearchInput />
-      <UserCard user={user} />
-    </div>
+    <BrowserRouter>
+      <DefaultLayout>
+        {/* <Todo /> */}
+        {/* <Sidebar /> */}
+        {/* <MainRendering /> */}
+        {/* <Router /> */}
+        <PrimaryButton>test</PrimaryButton>
+        <SecondaryButton>test</SecondaryButton>
+        <SearchInput />
+        <UserCard user={user} />
+      </DefaultLayout>
+    </BrowserRouter>
   );
 }
 
