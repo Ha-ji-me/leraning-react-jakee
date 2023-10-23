@@ -6,6 +6,7 @@ import MainRendering from './render/MainRendering';
 import Router from './router/Router';
 import { PrimaryButton } from './components/atoms/button/PrimaryButton';
 import { SecondaryButton } from './components/atoms/button/SecondaryButton';
+import { SearchInput } from './components/molculus/SearchInput';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       {/* <Router /> */}
       <PrimaryButton>test</PrimaryButton>
       <SecondaryButton>test</SecondaryButton>
+      <SearchInput />
     </div>
   );
 }
