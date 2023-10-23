@@ -1,6 +1,6 @@
-body {
+/* body {
   font-family: sans-serif;
-}
+} */
 
 /* input {
   border-radius: 16px;
@@ -24,3 +24,9 @@ body {
 /* li {
   margin-right: 8px;
 } */
+
+
+/* UserCard */
+body {
+  background-color: #e4f9f5;
+}
