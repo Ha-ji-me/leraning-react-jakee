@@ -13,6 +13,7 @@ import './App.css';
 // import { DefaultLayout } from './components/templates/DefaultLayout';
 import AtomicRouter from './atomic-router/AtomicRouter'
 import { UserProvider } from './providers/UserProvider';
+import { AxiosTest } from './axios/AxiosTest';
 
 function App() {
   // const user = {
@@ -25,21 +26,25 @@ function App() {
   // }
 
   return (
-    <UserProvider>
-      <AtomicRouter />
-    </UserProvider>
-    // <BrowserRouter>
-      // {/* <DefaultLayout> */}
-      //   {/* <Todo /> */}
-      //   {/* <Sidebar /> */}
-      //   {/* <MainRendering /> */}
-      //   {/* <Router /> */}
-      //   {/* <PrimaryButton>test</PrimaryButton> */}
-      //   {/* <SecondaryButton>test</SecondaryButton> */}
-      //   {/* <SearchInput /> */}
-      //   {/* <UserCard user={user} /> */}
-      // {/* </DefaultLayout> */}
-    // </BrowserRouter>
+    // atomic-design簡易アプリ
+    // <UserProvider>
+    //   <AtomicRouter />
+    // </UserProvider>
+
+
+    <BrowserRouter>
+      {/* <DefaultLayout> */}
+        {/* <Todo /> */}
+        {/* <Sidebar /> */}
+        {/* <MainRendering /> */}
+        {/* <Router /> */}
+        {/* <PrimaryButton>test</PrimaryButton> */}
+        {/* <SecondaryButton>test</SecondaryButton> */}
+        {/* <SearchInput /> */}
+        {/* <UserCard user={user} /> */}
+      {/* </DefaultLayout> */}
+      <AxiosTest />
+    </BrowserRouter>
   );
 }
 
