@@ -4,11 +4,11 @@ import { Card } from "../../atoms/card/Card";
 import { UserIconWithName } from "../../molculus/user/UserIconWithName";
 
 export const UserCard = memo((props) => {
-  const { user } = props;
+  const { user, isAdmin } = props;
 
   return (
     <Card>
-      <UserIconWithName image={user.image} name={user.name} />
+      <UserIconWithName image={user.image} name={user.name} isAdmin={isAdmin} />
       <SDl>
         <dt>メール</dt>
         <dd>{ user.mail }</dd>
