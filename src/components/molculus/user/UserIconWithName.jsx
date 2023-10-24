@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import styled from "styled-components";
 import { UserContext } from "../../../providers/UserProvider";
+import { Link } from "react-router-dom";
 
 export const UserIconWithName = (props) => {
   const { image, name } = props;
@@ -11,7 +12,7 @@ export const UserIconWithName = (props) => {
     <SContainer>
       <SImage height={160} width={160} src={image} alt={name} />
       <SNname>{ name }</SNname>
-      {isAdmin && <SEdit>編集</SEdit>}
+      {isAdmin && <SEdit><Link to="/edit">編集</Link></SEdit>}
     </SContainer>
   )
 }

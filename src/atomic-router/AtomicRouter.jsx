@@ -3,6 +3,7 @@ import { Top } from "../components/pages/Top"
 import { Users } from "../components/pages/Users"
 import { DefaultLayout } from "../components/templates/DefaultLayout"
 import { HeaderOnly } from "../components/templates/HeaderOnly"
+import { Edit } from "../components/pages/Edit"
 
 const AtomicRouter = () => {
   return (
@@ -12,6 +13,8 @@ const AtomicRouter = () => {
           element={ <DefaultLayout><Top /></DefaultLayout> } />
         <Route path="/users"
           element={ <HeaderOnly><Users /></HeaderOnly> } />
+        <Route path="/edit"
+          element={ <HeaderOnly><Edit /></HeaderOnly>} />
       </Routes>
     </BrowserRouter>
   )
