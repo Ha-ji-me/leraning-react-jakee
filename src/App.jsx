@@ -12,6 +12,7 @@ import './App.css';
 // import { HeaderOnly } from './components/templates/HeaderOnly';
 // import { DefaultLayout } from './components/templates/DefaultLayout';
 import AtomicRouter from './atomic-router/AtomicRouter'
+import { UserProvider } from './providers/UserProvider';
 
 function App() {
   // const user = {
@@ -24,7 +25,9 @@ function App() {
   // }
 
   return (
-    <AtomicRouter />
+    <UserProvider>
+      <AtomicRouter />
+    </UserProvider>
     // <BrowserRouter>
       // {/* <DefaultLayout> */}
       //   {/* <Todo /> */}
